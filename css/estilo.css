@@ -1,0 +1,138 @@
+/*Zero*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* Background */
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 62%;
+    color: white;
+}
+
+body{
+    background: linear-gradient(rgba(17, 17, 17, 0.6),rgba(17, 17, 17, 1)), url(/img/img5.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+/* Cabeçalho NAVBAR */
+
+header{
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(22, 22, 22, 0.2);
+    font-weight: 100;
+}
+
+.menu_content{
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.logo{
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+.menu_itens{
+    padding: 5px;
+}
+.menu_content .menu_itens{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu_content .menu_itens a{
+    text-decoration: none;
+    color: white;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu_content .menu_itens a:before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: rgb(251,255,0);
+    transition: all 0.4s ease;
+}
+
+.menu_content .menu_itens a:hover:before{
+    width: 100%;
+}
+
+/* Conteúdo */
+
+main{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Texto Principal */
+
+.main_text{
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.sec_text{
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+/* Botões */
+
+.btn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn button{
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: 0.5s ;
+}
+
+
+.btn button:hover{
+    width: 280px;
+    position: relative;
+}
+
